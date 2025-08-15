@@ -1,26 +1,26 @@
 # SRS-documentation
-Practicing SRS documentation
+Documentation of Logirsim
 
-#1. Introduction
-##1.1 Purpose
+# 1. Introduction
+## 1.1 Purpose
 The purpose of this document is to present a detailed description of the open-source
 software Logisim. It will explain the purpose and features of the software, the interfaces of
 the software, what the software will do and the constraints under which it must operate.
 This document is intended for users of the software and potential developers.
-##1.2 Document Conventions
+## 1.2 Document Conventions
 This Document was created based on the IEEE template for System Requirement
 Specification Documents.
-##1.3 Intended Audience and Reading Suggestions
+## 1.3 Intended Audience and Reading Suggestions
 - Typical Users, such as engineering students who want to use Logisim to design
 circuits for their class assignments, or circuit design enthusiasts
 - Programmers, who are interested in creating a fork of the project, which they can
 expand and personalize by adding features they need.
-##1.4 Product Scope
+## 1.4 Product Scope
 Logisim is a software for logic circuit simulation created by Dr. Carl Burch for educational
 purposes. The software emphasizes simplicity of use has an intuitive user interface and it
 includes many different circuit creation components, as well as useful tools for circuit
 analysis.
-##1.5 References
+## 1.5 References
 Logisim’s website:
 http://www.cburch.com/logisim/]
 Logisim’s Library Reference:
@@ -28,14 +28,14 @@ http://www.cburch.com/logisim/docs/2.7/en/html/libs/index.html
 Logisim on SourceForge:
 https://sourceforge.net/projects/circuit/
 
-#Software Requirements Specification for Logisim Page 2
+# Software Requirements Specification for Logisim Page 2
 IEEE Template for System Requirement Specification Documents:
 https://goo.gl/nsUFwy
 -Logisim: a graphical system for logical circuit design and simulation:
 https://dl.acm.org/doi/10.1145/545197.545199
 
-#2. Overall Description
-##2.1 Product Perspective
+# 2. Overall Description
+## 2.1 Product Perspective
 Logisim is a software system for logic circuit design developed for educational purposes.
 As educational software, it is widely used in many undergraduate programs around the
 world. The applet offers a variety of logical components. Among others, Logisim includes
@@ -45,7 +45,7 @@ logical components, as well as it’s circuit analysis features, make Logisim a 
 educational tool.
 It is an open source project that is currently inactive. Nonetheless, there are many forks of
 the project whose development is very active.
-##2.2 Product Functions
+## 2.2 Product Functions
 Main Page
 - Design Area: the area where the user can create or edit their own circuits.
 - Top Menu: a typical top menu, with the following options: “File”, “Edit”, “Project”,
@@ -59,9 +59,9 @@ simulation hierarchy.
 - Information pane: initially blank, it sits on the lower left of the window and it provides
 information about the selected component.
 
-#Software Requirements Specification for Logisim Page 3
+# Software Requirements Specification for Logisim Page 3
 
-##Top Menu
+## Top Menu
 - File: this section hosts all the typical options for file manipulation, such as creating a
 new circuit file, opening a saved circuit file, saving the current circuit file, exporting
 the current circuit as an image and opening a Preferences panel.
@@ -88,8 +88,7 @@ they want the Explorer pane to show. The two options are a) Show project circuit
 and libraries or, b) Show simulation hierarchy.
 - Edit viewed circuit layout or circuit’s subcircuit appearance.
 
-Software Requirements Specification for Logisim Page 4
-Explorer pane
+# Explorer pane
 The Explorer pane consists of two different views:
 Show project circuits and libraries:
 - Any circuits added to the current project will appear there
@@ -111,7 +110,7 @@ This option shows the hierarchy of subcircuits being simulated.
 Information pane
 It consists of useful information and switches regarding a selected component. It
 allows the user to view information about the component and change it.
-##2.3 User Classes and Characteristics
+## 2.3 User Classes and Characteristics
 - Typical Users, such as engineering students who want to use Logisim to design
 circuits for their class assignments, or circuit design enthusiasts
 - Advanced Users, such as course instructors, who are experienced with using the
@@ -119,17 +118,15 @@ software.
 - Programmers, who are interested in creating a fork of the project, which they can
 expand and personalize by adding features they need.
 
-#Software Requirements Specification for Logisim Page 5
-
-##2.4 Operating Environment
+## 2.4 Operating Environment
 Logisim requires Java 5 or later. It runs under:
 - Windows (.jar, .exe)
 - MacOS X (.jar, .tar.gz)
 - Linux (.jar)
-##2.5 Design and Implementation Constraints
+## 2.5 Design and Implementation Constraints
 Logisim was developed in Java. It is very lightweight and it does not rely on any software
 tools or applications.
-##2.6 User Documentation
+## 2.6 User Documentation
 
 There is a tutorial, a user guide and a library reference for each version -starting with 2.1.x-
 on Logisim’s website:
@@ -141,7 +138,7 @@ There is a subreddit dedicated to Logisim that is very active:
 https://www.reddit.com/r/logisim/
 Also, below is a link to a YouTube tutorial on Logisim, covering basic features:
 https://www.youtube.com/watch?v=cMz7wyY_PxE
-##2.7 Assumptions and Dependencies
+## 2.7 Assumptions and Dependencies
 Logisim can run on pretty much any computer running Java version 5 or later. Specifically
 on Windows, the user can run the software either by downloading the .jar file or the .exe
 file. Alternatively, they could use an open-source tool such as launch4j to wrap the Java
